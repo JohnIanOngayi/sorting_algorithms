@@ -13,8 +13,8 @@ This repository folder contains programs that implement various sorting agorithm
 The files in this repository are self-descriptive.
 The Algorithms included are:-
 
-- [ ] Bubble Sort
-- [ ] Insertion Sort
+- [x] Bubble Sort
+- [x] Insertion Sort
 - [ ] Selection Sort
 - [ ] Quick Sort
 - [ ] Shell Sort
