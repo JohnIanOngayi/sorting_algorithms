@@ -23,6 +23,13 @@ typedef struct listint_s
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
+#define SWAP(a, b, size, array) do { \
+	int tmp_ = *(a);                 \
+	*(a) = *(b);                     \
+	*(b) = tmp_;                     \
+	print_array((array), (size));    \
+} while (0)
+
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
@@ -36,6 +43,13 @@ void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
+/**
+ * kind_t - defines types of cards
+ * @SPADE: spade
+ * @HEART: heart
+ * @CLUB: club
+ * @DIAMOND: diamond
+ */
 typedef enum kind_e
 {
 	SPADE = 0,
