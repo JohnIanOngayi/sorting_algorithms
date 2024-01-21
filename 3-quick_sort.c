@@ -43,7 +43,8 @@ size_t partition(int *array, size_t start, size_t end, size_t size)
 		}
 	}
 	prev++;
-	swap(&(array[end]), &(array[prev]), size, array);
+	/*swap(&(array[end]), &(array[prev]), size, array);*/
+	SWAP(&(array[end]), &(array[prev]), size, array);
 	/**
 	 * tmp = array[prev];
 	 * array[prev] = array[end];
