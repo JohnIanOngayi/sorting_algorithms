@@ -1,0 +1,5 @@
+a.out
+.gitignore
+*-main.c
+*.swp
+100-shell.c
